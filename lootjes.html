@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Sinterkerst Lootjes</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container text-center vw-75">
+      <h1 class="mt-5">Sinterkerst Verhaal</h1>
+      <img
+        src="sint.png"
+        class="img-fluid m-5"
+        alt="Sinterklaas"
+        width="30%"
+      />
+      <p class="lead">
+        Op een koude decemberavond, net toen de maan hoog aan de hemel stond,
+        zat Sinterkerst in zijn grote, rode leunstoel voor de knisperende haard.
+        Zijn elven waren druk in de weer met het voorbereiden van de cadeaus
+        voor Pakjesavond. Er hing een gezellige drukte in het kasteel, maar
+        Sinterkerst had iets anders aan zijn hoofd.
+      </p>
+      <p>
+        Hij dacht aan de moderne tijden, hoe de wereld veranderd was. "Deze tijd
+        vraagt om een moderne aanpak," mompelde hij, terwijl hij zijn bril
+        rechtzette en naar zijn oude, maar betrouwbare laptop keek. Met een
+        twinkeling in zijn ogen opende hij een nieuwe, speciale webpagina voor
+        Sinterkerstlootjes, een project waar de Slimme Elf (die toevallig Piet
+        heet) maanden aan had gewerkt.
+      </p>
+      <p>
+        Deze webpagina was niet zomaar een pagina. Het was een plek waar
+        families en vrienden virtueel bij elkaar konden komen om lootjes te
+        trekken voor Sinterkerst. Elk persoon kreeg een wachtwoord en kon
+        inloggen om te ontdekken voor wie hij of zij een cadeau mocht kopen.
+        Sinterkerst was dol op dit idee, omdat het mensen samenbracht, zelfs als
+        ze ver uit elkaar woonden.
+      </p>
+      <p>
+        Terwijl de wind buiten huilde en de sneeuw tegen de vensters sloeg,
+        besloot Sinterkerst een laatste bericht toe te voegen aan de webpagina.
+        Hij wilde iets persoonlijks achterlaten, iets dat iedereen zou
+        herinneren aan de vreugde en warmte van het Sinterkerstfeest.
+      </p>
+      <p>
+        Met trillende vingers begon hij te typen. Toen hij klaar was leunde hij
+        tevreden achterover. Deze webpagina zou niet alleen het lootjes trekken
+        vergemakkelijken, maar ook een stukje van zijn hart overbrengen. Hij
+        sloot zijn laptop en keek naar buiten waar de sterren fonkelden. Het was
+        tijd voor hem om te rusten, wetende dat de Sinterkerstgeest op een
+        nieuwe, bijzondere manier voort zou leven.
+      </p>
+      <hr />
+      <h2 class="mt-5">Instructies</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Klik hieronder op de je eigen naam, voer het wachtwoord in dat je hebt
+          gekregen en kijk voor wie je een cadeau mag kopen.
+        </li>
+        <li class="list-group-item">
+          Het maximum bedrag per persoon bedraagt 15 EUR.
+        </li>
+        <li class="list-group-item">
+          Het meest waardevolle is de aandacht die je ander geeft. Bijvoorbeeld
+          door een mooi gedicht bij te schrijven.
+        </li>
+        <li class="list-group-item">
+          Als je een bericht wilt achterlaten voor de Sinterkerst dan kan dat
+          <a
+            href="https://docs.google.com/spreadsheets/d/1qQ8EXt8XqWMFbEDqS5DA3e6Tek4v-pVdDW-YPS-WtwI/edit?usp=sharing"
+            target="_blank"
+            >hier</a
+          >.
+        </li>
+      </ul>
+      <br />
+
+      <button
+        class="btn btn-lg btn-primary name-button m-3"
+        onclick="showName('Nadia')"
+      >
+        Nadia
+      </button>
+      <button
+        class="btn btn-lg btn-primary name-button m-3"
+        onclick="showName('Bibi')"
+      >
+        Bibi
+      </button>
+      <button
+        class="btn btn-lg btn-primary name-button m-3"
+        onclick="showName('Noah')"
+      >
+        Noah
+      </button>
+      <button
+        class="btn btn-lg btn-primary name-button m-3"
+        onclick="showName('Jona')"
+      >
+        Jona
+      </button>
+      <button
+        class="btn btn-lg btn-primary name-button m-3"
+        onclick="showName('Witek')"
+      >
+        Witek
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      id="SinterkerstModal"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title alert alert-info">
+              Bericht van Sinterkerst
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalHeader"></p>
+            <p>
+              In deze dynamische tijden van groei en verandering, laten we de
+              warmte van samenzijn koesteren. Moge de vreugde van Sinterkerst
+              onze huizen vullen met liefde, licht en lach. Denk eraan, het
+              mooiste geschenk is onze verbondenheid, zelfs als we fysiek apart
+              zijn. Of je nu net afgestudeerd bent, plannen maakt voor reizen of
+              een nieuwe carrièrestap, zoals Bibi die op 56-jarige leeftijd een
+              frisse start overweegt, laten we ons door de geest van Sinterkerst
+              inspireren en verenigen. Met veel liefde, Sinterkerst.
+            </p>
+            <div
+              class="alert alert-warning h5"
+              role="alert"
+              id="modalMessage"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showName(name) {
+        var secretData = {
+          Nadia: { password: "UGVwZXJub3Rlbg==", secretName: "Sm9uYQ==" },
+          Bibi: { password: "TWlqdGVy", secretName: "Tm9haA==" },
+          Noah: { password: "U2Nob29yc3RlZW4=", secretName: "V2l0ZWs=" },
+          Jona: { password: "UGFhcmQ=", secretName: "TmFkaWE=" },
+          Witek: { password: "U3Rvb21ib290", secretName: "QmliaQ==" },
+        };
+
+        var password = btoa(prompt("Voer uw wachtwoord in voor " + name));
+
+        if (password === secretData[name].password) {
+          document.getElementById("modalHeader").innerText =
+            "Lieve " + name + ",";
+          document.getElementById("modalMessage").innerText =
+            "Je hebt " + atob(secretData[name].secretName) + " uitgeloot!";
+          var modal = new bootstrap.Modal(
+            document.getElementById("SinterkerstModal")
+          );
+          modal.show();
+        } else {
+          alert("Onjuist wachtwoord!");
+        }
+      }
+    </script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
