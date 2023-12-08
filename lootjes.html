@@ -75,14 +75,6 @@
           Het meest waardevolle is de aandacht die je ander geeft. Bijvoorbeeld
           door een mooi gedicht bij te schrijven.
         </li>
-        <li class="list-group-item">
-          Als je een bericht wilt achterlaten voor de Sinterkerst dan kan dat
-          <a
-            href="https://docs.google.com/spreadsheets/d/1qQ8EXt8XqWMFbEDqS5DA3e6Tek4v-pVdDW-YPS-WtwI/edit?usp=sharing"
-            target="_blank"
-            >hier</a
-          >.
-        </li>
       </ul>
       <br />
 
@@ -116,6 +108,18 @@
       >
         Witek
       </button>
+      <div
+        class="alert alert-warning display-6"
+        role="alert"
+      >
+        Wensen of andere belangrijke zaken kun je
+        <a
+          href="https://docs.google.com/spreadsheets/d/1qQ8EXt8XqWMFbEDqS5DA3e6Tek4v-pVdDW-YPS-WtwI/edit?usp=sharing"
+          target="_blank"
+          >hier</a
+        >
+        achterlaten.
+      </div>
     </div>
 
     <!-- Modal -->
@@ -175,7 +179,7 @@
           document.getElementById("modalHeader").innerText =
             "Lieve " + name + ",";
           document.getElementById("modalMessage").innerText =
-            "Je hebt " + atob(secretData[name].secretName) + " uitgeloot!";
+            "Je hebt " + atob(secretData[name].secretName) + " getrokken!";
           var modal = new bootstrap.Modal(
             document.getElementById("SinterkerstModal")
           );
